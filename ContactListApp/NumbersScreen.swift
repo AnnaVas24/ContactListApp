@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct NumbersScreen: View {
+    let contactList: [Person]
+    
     var body: some View {
-       Image(systemName: "person.circle")
-            .resizable()
-            .frame(width: 200, height: 200)
+        NavigationView{
+        List {
+            ForEach(contactList, id: \.self) { contact in
+                Section(header: Text("\(contact.fullName)")) {
+                    Label("\(contact.phoneNumber)", systemImage: "phone")
+                    Label("\(contact.email)", systemImage: "tray")
+                }
+            }
+        }.navigationTitle("Contacts")
+            
+        }
     }
 }
 
 struct NumbersScreen_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersScreen()
+        NumbersScreen(contactList: Person.getContactList())
     }
 }

@@ -15,6 +15,7 @@
 		5113C03727CEDB0B00513F4D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5113C03627CEDB0B00513F4D /* DataManager.swift */; };
 		5113C03927CEDE5E00513F4D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5113C03827CEDE5E00513F4D /* HomeScreen.swift */; };
 		5113C03B27CEDE7500513F4D /* NumbersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5113C03A27CEDE7500513F4D /* NumbersScreen.swift */; };
+		5113C03D27CF912A00513F4D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5113C03C27CF912A00513F4D /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5113C03627CEDB0B00513F4D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5113C03827CEDE5E00513F4D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5113C03A27CEDE7500513F4D /* NumbersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersScreen.swift; sourceTree = "<group>"; };
+		5113C03C27CF912A00513F4D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5113C03627CEDB0B00513F4D /* DataManager.swift */,
 				5113C02827CEDAB600513F4D /* ContentView.swift */,
 				5113C03827CEDE5E00513F4D /* HomeScreen.swift */,
+				5113C03C27CF912A00513F4D /* DetailsView.swift */,
 				5113C03A27CEDE7500513F4D /* NumbersScreen.swift */,
 				5113C02A27CEDAB700513F4D /* Assets.xcassets */,
 				5113C02C27CEDAB700513F4D /* Preview Content */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5113C03B27CEDE7500513F4D /* NumbersScreen.swift in Sources */,
+				5113C03D27CF912A00513F4D /* DetailsView.swift in Sources */,
 				5113C03527CEDAD000513F4D /* Person.swift in Sources */,
 				5113C03927CEDE5E00513F4D /* HomeScreen.swift in Sources */,
 				5113C03727CEDB0B00513F4D /* DataManager.swift in Sources */,

@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    let contactList = Person.getContactList()
+    let contactList: [Person]
     
     var body: some View {
         NavigationView{
             ZStack{
-        List(contactList, id: \.self) { contact in
-            Text("\(contact.name) \(contact.surname)")
-        }
+                List(contactList, id: \.self) { contact in
+                    NavigationLink {
+                        DetailsView(contact: contact)
+                    } label: {
+                        Text("\(contact.fullName)")
+                    }
+                    
+                }
+                
             } .navigationTitle("Contacts")
+                .listStyle(.plain)
         }
     }
     
@@ -24,6 +31,6 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(contactList: Person.getContactList())
     }
 }
