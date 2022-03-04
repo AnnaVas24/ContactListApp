@@ -49,31 +49,8 @@ extension Person {
         return persons
     }
     static func getContact() -> Person {
-        var person = Person(name: "", surname: "", email: "", phoneNumber: "")
-        
-        let names = DataManager.shared.names.shuffled()
-        let surnames = DataManager.shared.surnames.shuffled()
-        let emails = DataManager.shared.emails.shuffled()
-        let phones = DataManager.shared.phones.shuffled()
-        
-        let iterationCount = min(
-            names.count,
-            surnames.count,
-            emails.count,
-            phones.count
-        )
-        
-        for index in 0..<iterationCount {
-          person = Person(
-                name: names[index],
-                surname: surnames[index],
-                email: emails[index],
-                phoneNumber: phones[index]
-            )
-          
-    }
-        return person
-    }
+        Person(name: "name", surname: "Surname", email: "as@hj", phoneNumber: "111111")
+}
 }
 
 enum Contacts: String {
